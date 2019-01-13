@@ -1,107 +1,51 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
-const client2 = new Discord.Client();
+  const kboosh = new Discord.Client();
+    const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx0nvw.Duw1w44ZaaypCNTnX_7gWsLCCyY"
+      kboosh.on('ready', () => {
+        kboosh.user.setGame(MAX NETWORK Broadcast,'https://www.twitch.tv/MAX-Broadcast%27);
+          console.log('Im Ready!');
 
-client.on('message', message => {
-        var prefix = "*";
-        if (message.author.bot) return;
-        if (!message.content.startsWith(prefix)) return;
+        });
 
-        let command = message.content.split(" ")[0];
-        command = command.slice(prefix.length);
-
-
-      let args = message.content.split(" ").slice(1);
-      let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'say')) {
-            message.channel.send(''+x);
-                message.delete(999)
-        }
+  kboosh.on('message', message => {
+    if (message.content.split(' ')[0] == '#bc')
+       message.guild.members.forEach( member => {
+         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
 
-      });
+           member.send( ${member} ! + "" + message.guild.name + " :  " + message.content.substr(3));
+                                                      message.delete();
+
+                                                    });
+
+                                                  });
+   kboosh.on("message", message => {
+       var prefix = "#";
  
-client.on('ready', () => {
-   console.log(`----------------`);
-   console.log(`Credit Farmm - Script By : AKRAM `);
-   console.log(`----------------`);
-   console.log(`Loadinng`);
-   console.log(`Loadinng.`);
-   console.log(`Loadinng..`);
-   console.log(`Loadinng...`);
-   console.log(`This Bots Online ' `);
-   console.log(`----------------`);
+             var args = message.content.substring(prefix.length).split(" ");
+                if (message.content.startsWith(prefix + "b")) {
+                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+Twitch
+Twitch
+Twitch is the world's leading video platform and community for gamers.
+
+if (!args[1]) {
+
+                                 let embed3 = new Discord.RichEmbed()
+                                     .setDescription(":white_check_mark: | تم ارسال رسالة لا يوجد فيها شيء")
+                                       .setColor("#FF00FF")
+                                          message.channel.sendEmbed(embed3);
+
+                                        } else {
+
+
+                                           let embed4 = new Discord.RichEmbed()
+                                                            .setDescription(':white_check_mark: | تم ارسال الرساله للجميع ..')
+                                                                .setColor("#99999")
+
+                                                                message.channel.sendEmbed(embed4);
+                                                      message.delete();
+                            }
+                          }
 });
-
-
-client.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
-});
-
-
-
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Make Money Not Friends :fire: :money: @everyone  **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Make Money Not Friends :fire: :money: @everyone **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-
-
-
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+kboosh.login(kbooshtoken);يها شيء
