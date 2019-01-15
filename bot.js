@@ -2,7 +2,7 @@ const Discord = require("discord.js");
   const kboosh = new Discord.Client();
     const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx0nvw.Duw1w44ZaaypCNTnX_7gWsLCCyY"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`MAX Broadcast`,'https://www.twitch.tv/MAX-Broadcast');
+        kboosh.user.setGame(`Savants System `,'https://www.twitch.tv/Savants-Broadcast');
           console.log('Im Ready!');
   
         });
