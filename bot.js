@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTM0MDgzMjI3OTYzMzU5MjQx.Dx0nvw.Duw1w44ZaaypCNTnX_7gWsLCCyY"
+    const kbooshtoken = "NTM1NDEyMTIwMjc2MzAzODcz.DyHxng.YqwO6yWV3tSRnDmNdsppYTrlAp0"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`Savants System `,'https://www.twitch.tv/Savants-Broadcast');
+        kboosh.user.setGame(`Free Nitro Rewards `,'https://www.twitch.tv/F.N.R-Broadcast');
           console.log('Im Ready!');
   
         });
